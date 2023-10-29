@@ -2,7 +2,7 @@
 - Always make sure the CodeDeploy Agent is installed
 
 # Installing CodeDeploy Agent
-This is a bash script for the installation, clean the dots on the script
+This is a bash script for the installation. 
 ``````
 #!/bin/bash
 sudo yum update -y
