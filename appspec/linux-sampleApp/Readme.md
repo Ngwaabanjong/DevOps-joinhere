@@ -18,3 +18,8 @@ SSH into ec2 server
 - $ nano script.sh  = insert installation code
 - $ chmod 755 script.sh
 - $ ./script.sh
+
+# Check CodeDeploy Agent Status
+Check if the agent is running. 
+- $ sudo service codedeploy-agent status
+- $ sudo service codedeploy-agent start            = use this if agent is not running
