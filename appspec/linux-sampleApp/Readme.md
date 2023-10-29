@@ -2,6 +2,8 @@
 - Always make sure the CodeDeploy Agent is installed
 
 # Installing CodeDeploy Agent
+This is a bash script for the installation, clean the dots on the script
+``````
 #!/bin/bash
 sudo yum update -y
 sudo yum install -y ruby wget
@@ -9,6 +11,7 @@ wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status
+``````
 
 # Installing Commands
 SSH into ec2 server
