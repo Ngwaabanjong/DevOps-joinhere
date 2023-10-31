@@ -5,13 +5,13 @@
 	- defines the image you want to use.
 	- Define the path of the image if it's on ECR, GitHub or Docker Hub.
     ``````
-	FROM ngwaabanjong/image-name      = this is my docker hub registry name/image 
+	FROM ngwaabanjong/image-name      # this is my docker hub registry name/image 
     ``````
 
 2. **RUN** 
 	- Here you will run Linux commands to execute the image that was pulled from the registry.
     ``````
-	RUN apt-get update -y      = how to install anything on the OS
+	RUN apt-get update -y      # how to install anything on the OS
     ``````
 
 3. **COPY** 
@@ -20,7 +20,7 @@
 	- Copy this file.txt from host machine to image on this directory  
 	- COPY can only accept local files and ADD can accept URL source.
     ``````
-    COPY file.txt /tmp           = the file will be copied to the tmp directory 
+    COPY file.txt /tmp           # the file will be copied to the tmp directory 
     ``````
 
 4. **ADD** 
@@ -28,7 +28,7 @@
 	- Here you just have to define the source and the destination 
 	- $ tar -czvf file.tar.gz file.txt = compress a file to tar 
 	``````
-    ADD file.tar.gz /tmp      # = it will take the contain from the tar file and unzip it on tmp
+    ADD file.tar.gz /tmp      # it will take the contain from the tar file and unzip it on tmp
     ``````
 
 5. **CMD** 
@@ -54,9 +54,9 @@
 	- This keyword is used to expose a port number where the app will be listening to with the -p option at runtime.
     - The EXPOSE instruction takes one or more port numbers as arguments. These ports can be specified in one of the following formats:
     ``````
-    EXPOSE 80             # = A single port
-    EXPOSE 80 443         # = Multiple ports separated by spaces
-    EXPOSE 3000-3010      # = A range of ports
+    EXPOSE 80             # A single port
+    EXPOSE 80 443         # Multiple ports separated by spaces
+    EXPOSE 3000-3010      # A range of ports
     `````````
 
 8. **ENV** 
@@ -105,7 +105,7 @@
    ``````
 # Dockerfile commands
 ``````
-$ docker build -t <image-name> . # = cmd to build from docker image
-$ docker history <image-name>    # = to view steps executed by dockerfile
-$ docker images                  # = to view images
+$ docker build -t <image-name> . # cmd to build from docker image
+$ docker history <image-name>    # to view steps executed by dockerfile
+$ docker images                  # to view images
 ``````
