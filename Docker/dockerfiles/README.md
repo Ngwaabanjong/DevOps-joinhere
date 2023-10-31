@@ -58,6 +58,10 @@
     EXPOSE 80 443         # Multiple ports separated by spaces
     EXPOSE 3000-3010      # A range of ports
     `````````
+    - For example, to publish the exposed port 3000 on the host machine:
+    ``````
+    $ docker run -p 3000:3000 my-app-container
+    ``````
 
 8. **ENV** 
     - The ENV instruction in a Dockerfile is used to set environment variables within the Docker image. 
@@ -75,7 +79,7 @@
     CMD ["node", "app.js", "--port", "$APP_PORT"]
     **OVERRIDING WITH BASH**
     ``````
-    docker run -e DB_HOST=newdatabase.example.com my-image
+    $ docker run -e DB_HOST=newdatabase.example.com my-image
     ``````
 
 9. **WORKDIR** - 
@@ -87,8 +91,13 @@
 10. **HEALTHCHECK** 
     - monitoring
 	- Build and image using dockerfile with HEALTHCHECK keyword, then build container from it.
-	- Exp: HEALTHCHECK --interval=5s CMD ping -c 1 (ip address of the container to monitor)
-	- Check logs with $ docker inspect (con-id)
+    ``````
+	HEALTHCHECK --interval=5s CMD ping -c 1 (ip address of the container to monitor)
+    ``````
+	- Check logs with:
+    ``````
+    $ docker inspect (con-id)
+    ``````
 
 11. **LABEL** 
    - Labels can be assigned to Docker objects when you create them or added later using the `docker container label` or `docker image label` commands.
@@ -101,7 +110,7 @@
    ``````
    - You can use Docker CLI commands like docker ps, docker images, and docker inspect to filter and query Docker resources based on their labels.
    ``````
-   docker ps --filter "label=environment=production"
+   $ docker ps --filter "label=environment=production"
    ``````
 # Dockerfile commands
 ``````
