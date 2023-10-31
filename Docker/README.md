@@ -1,4 +1,5 @@
 # Docker Library
+![ ](DockerOS.png)  ![Alt text](DockerRuntime.png)
 Docker is a popular platform for developing, shipping, and running applications in containers. Containers are lightweight, standalone units that package an application and its dependencies, making it easier to deploy and manage software across different environments. To explain Docker's architecture in a way that's easy for beginners to understand, let's break it down step by step:
 
 1. **Docker Engine**: This is the heart of Docker. Think of it as the core that manages containers. It consists of two main components:
