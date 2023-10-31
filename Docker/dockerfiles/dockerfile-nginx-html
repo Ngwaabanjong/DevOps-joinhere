@@ -1,0 +1,5 @@
+FROM nginx:alpine
+EXPOSE 80
+
+# Copy code to html directory
+COPY . /usr/share/nginx/html
