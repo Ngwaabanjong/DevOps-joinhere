@@ -45,9 +45,13 @@ volumes:
   **BUILD**
   ``````
   docker compose up -d
-  docker compose down 
   ``````
 
   **BROWSE AND COMPLETE INSTALLATION**
 
   http://localhost:80
+
+  SHUTDOWN
+  ```
+  docker compose down
+  ``` 
