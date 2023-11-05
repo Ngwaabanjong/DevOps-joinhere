@@ -12,7 +12,7 @@ git clone https://github.com/Ngwaabanjong/apps.git
 
 Go to the Folder and copy the path
 ```
-cd apps
+cd apps/html-car-web
 pwd
 ```
 
