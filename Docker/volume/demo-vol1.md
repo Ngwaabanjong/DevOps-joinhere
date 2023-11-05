@@ -23,7 +23,7 @@ docker run --name vcon1 -it -v myvol1:/tmp ubuntu
 ```
 Exec Container and create files in /tmp directory
 ```
-docker exec <container-name> /bin/bash
+docker exec vcon1 /bin/bash
 cd /tmp
 touch file1 file2
 exit
@@ -38,7 +38,7 @@ docker run --name vcon2 -it -v myvol1:/tmp ubuntu
 ```
 Exec and cd /tmp to check files
 ```
-docker exec <container-name> /bin/bash
+docker exec vcon2 /bin/bash
 cd /tmp
 ls
 exit
