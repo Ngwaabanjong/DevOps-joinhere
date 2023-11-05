@@ -16,7 +16,7 @@ EXPOSE 80
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 EOF
 ```
-**CMD**
+## COMMANDS
 BUILD
 ```
 docker build -t <dockerhub-name>/<image-name> .
