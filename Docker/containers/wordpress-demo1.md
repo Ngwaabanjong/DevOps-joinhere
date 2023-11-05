@@ -19,7 +19,7 @@ show tables;
 ```
 - Nothing will be there..
 - Now go to wordpress on browser and configure below details
-- 
+
 **ON BROWSER**
   
 - Database : wordpress
