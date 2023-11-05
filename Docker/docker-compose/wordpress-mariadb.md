@@ -45,6 +45,7 @@ volumes:
   **BUILD**
   ``````
   docker compose up -d
+  docker compose down 
   ``````
 
   **BROWSE AND COMPLETE INSTALLATION**
