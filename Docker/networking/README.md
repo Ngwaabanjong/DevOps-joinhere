@@ -24,7 +24,7 @@ docker run -itd --name c3 --network net2  busybox
 **Attach to c3 and ping c1
 ```bash
 docker attach c3
-ping ipaddress c1
+ping c1
 ```
 No data received
 **Lets add C2 in net2 network also**
@@ -36,5 +36,5 @@ Now c3 can communicate with c2 but not with C1
 ```bash
 docker network disconnect net2 c2
 ```
-## demo 2 - Create Network
+## demo 2 - 
 
