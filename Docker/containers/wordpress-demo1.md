@@ -19,14 +19,18 @@ show tables;
 ```
 - Nothing will be there..
 - Now go to wordpress on browser and configure below details
+- 
 **ON BROWSER**
+  
 - Database : wordpress
 - User: root
 - Password : dba@123
 - Url : ec2ipiddress:portnaumerofDB
 - Table : leave it same
 Click on given button
+
 **COMPLETE STEPS**
+
 - Enter the site details, username, password(anything) click on week password checkbox
 - Click on install
 - You will be on wordpress application.
