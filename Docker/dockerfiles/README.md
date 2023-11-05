@@ -80,16 +80,17 @@
     **OVERRIDING WITH BASH**
     ``````
     **Adding a Variable from the CMD Line**
+   ```
     $ docker run -e DB_HOST=newdatabase.example.com my-image
     ``````
 
-9. **WORKDIR** - 
+10. **WORKDIR** - 
 	- It's similar to using the cd command
 	- The working directory is the directory in which the commands in your Dockerfile are executed when you build and run the image.
 	- You can use both absolute and relative paths. If the directory does not exist, Docker will create it.
     - Example: WORKDIR /path/to/your/directory = WORKDIR /app
 
-10. **HEALTHCHECK** 
+11. **HEALTHCHECK** 
     - monitoring
 	- Build and image using dockerfile with HEALTHCHECK keyword, then build container from it.
     ``````
@@ -100,7 +101,7 @@
     $ docker inspect (con-id)
     ``````
 
-11. **LABEL** 
+12. **LABEL** 
    - Labels can be assigned to Docker objects when you create them or added later using the `docker container label` or `docker image label` commands.
    - Labels can be used to provide information about the purpose of a container, its owner, version, environment, or any custom metadata that is relevant to your use case.
    - Example:
