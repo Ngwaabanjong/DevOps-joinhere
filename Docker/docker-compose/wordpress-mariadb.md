@@ -47,6 +47,6 @@ volumes:
   docker compose up -d
   ``````
 
-  **BROWSE AND COMPLETE INSTALLATION
+  **BROWSE AND COMPLETE INSTALLATION**
 
   http://localhost:80
