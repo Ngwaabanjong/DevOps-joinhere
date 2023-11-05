@@ -25,7 +25,7 @@ show tables;
 - Database : wordpress
 - User: root
 - Password : dba@123
-- Url : ec2ipiddress:portnaumerofDB
+- DB_HOST : ec2-ipiddress:HostPortNumberOfDB - 35.170.70.1:32771
 - Table : leave it same
 Click on given button
 
