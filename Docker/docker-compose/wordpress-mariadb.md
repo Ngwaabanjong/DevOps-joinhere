@@ -6,7 +6,7 @@ nano docker-compose.yml
 ``````
 
 **CODE**
-
+``````
 services:
   db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
