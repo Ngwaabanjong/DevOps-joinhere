@@ -79,6 +79,7 @@
     CMD ["node", "app.js", "--port", "$APP_PORT"]
     **OVERRIDING WITH BASH**
     ``````
+    **Adding a Variable from the CMD Line**
     $ docker run -e DB_HOST=newdatabase.example.com my-image
     ``````
 
