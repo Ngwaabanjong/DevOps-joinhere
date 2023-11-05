@@ -3,8 +3,8 @@
 ```
 docker run -itd --name wp -P wordpress
 ```
-- Access it form browser
-- Ipaddress:portnumber
+- Access it form browser using the host port.
+- Ipaddress:portnumber - http://35.170.70.1:32769
 ## Deploy a DB container
 ```
 docker volume create dbvol
