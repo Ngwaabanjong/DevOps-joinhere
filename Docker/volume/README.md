@@ -14,8 +14,8 @@
 Allow you to create a named volume and mount it to a container so that the data stored in the volume is preserved even if the container is stopped or removed.
 
 ### Bind Mount
-> In this type, we don't preserve containers data in the docker area(/var/lib/docker/volumes)
-> Instead, the container data will be preserved in any other directory no the host machine
-> No name is given to the volume in this case
-> Any host directory that you want can be mapped to containers directory
+- In this type, data is not preserved in the (/var/lib/docker/volumes) area.
+- Instead, the container data will be preserved in any other directory no the host machine.
+- No name is given to the volume in this case
+- Any host directory that you want can be mapped to containers directory
 
