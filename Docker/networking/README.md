@@ -27,7 +27,7 @@ docker network ls
   - It is a public network
   - It utilizes the host’s IP address and TCP port space to display the services running inside the container.
   - It effectively disables network isolation between the docker host and the docker containers, which means using this network driver a user will be unable to run multiple containers on the same host
-### Note
+## Note:-
   - In this network driver, the Docker containers will neither have any access to external networks nor will it be able to communicate with other containers.
   - This option is used when a user wants to disable the networking access to a container. 
   - In simple terms, None is called a loopback interface, which means it has no external network interfaces. 
@@ -37,7 +37,7 @@ docker network ls
  
 **Overlay**
   - This is utilized for creating an internal private network to the Docker nodes in the Docker swarm cluster.
- ### Note
+ ## Note:-
   - Docker Swarm is a service for containers which facilitates developer teams to build and manage a cluster of swarm nodes within the Docker platform.
   - It is an important network driver in Docker networking. It helps in providing the interaction between the stand-alone container and the Docker swarm service.
 
@@ -45,7 +45,7 @@ docker network ls
   - It simplifies the communication process between containers.
   - This network assigns a MAC address to the Docker container.
   - With this Mac address, the Docker server (daemon) routes the network traffic to a router
- ### Note
+ ## Note:-
   - Docker Daemon is a server which interacts with the operating system and performs all kind of services.
   - It is suitable when a user wants to directly connect the container to the physical network rather than the Docker host.
 
