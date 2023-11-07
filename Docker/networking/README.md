@@ -2,6 +2,7 @@
 Container networking refers to the ability for containers to connect to and communicate with each other, or to non-Docker workloads.
 
 **Note:** A user can add containers to more than one network.
+
 ## Type of Networks Drivers:
 - Bridge
 - Host
@@ -10,8 +11,7 @@ Container networking refers to the ability for containers to connect to and comm
 - Macvlan
 ```
 docker network ls
-```![image](https://github.com/Ngwaabanjong/DevOps-joinhere/assets/86162181/c9d815e9-695a-4c6d-849a-6f02954ccdf8)
-
+```
 
 **Bridge**  
   - All containers by default are in the bridge network. 
@@ -21,13 +21,13 @@ docker network ls
   - These are widely used when applications are executed in a standalone container. 
  ```
  docker inspect bridge
-```
+ ```
 
 **Host** 
   - It is a public network
   - It utilizes the host’s IP address and TCP port space to display the services running inside the container.
   - It effectively disables network isolation between the docker host and the docker containers, which means using this network driver a user will be unable to run multiple containers on the same host
-	**Note:**
+**Note:**
   - In this network driver, the Docker containers will neither have any access to external networks nor will it be able to communicate with other containers.
   - This option is used when a user wants to disable the networking access to a container. 
   - In simple terms, None is called a loopback interface, which means it has no external network interfaces. 
@@ -57,7 +57,7 @@ docker network create <network-name>
 ```
 
 ##Create docker Container in network and assign static IP:
-`` 
+```
 docker run -itd --name c2 --network mynet --ip 10.5.0.4 -P nginx
 ```
 
