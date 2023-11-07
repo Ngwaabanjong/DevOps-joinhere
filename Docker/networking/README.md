@@ -8,6 +8,10 @@ Container networking refers to the ability for containers to connect to and comm
 - Null
 - Overlay
 - Macvlan
+```
+docker network ls
+```![image](https://github.com/Ngwaabanjong/DevOps-joinhere/assets/86162181/c9d815e9-695a-4c6d-849a-6f02954ccdf8)
+
 
 **Bridge**  
   - All containers by default are in the bridge network. 
@@ -20,7 +24,7 @@ Container networking refers to the ability for containers to connect to and comm
 ```
 
 **Host** 
-	- It is a public network
+  - It is a public network
   - It utilizes the host’s IP address and TCP port space to display the services running inside the container.
   - It effectively disables network isolation between the docker host and the docker containers, which means using this network driver a user will be unable to run multiple containers on the same host
 	**Note:**
@@ -29,7 +33,7 @@ Container networking refers to the ability for containers to connect to and comm
   - In simple terms, None is called a loopback interface, which means it has no external network interfaces. 
 
 **Null**
-	- The null network has no IPs and can't connect to the internet.
+  - The null network has no IPs and can't connect to the internet.
  
 **Overlay**
   - This is utilized for creating an internal private network to the Docker nodes in the Docker swarm cluster.
@@ -45,15 +49,18 @@ Container networking refers to the ability for containers to connect to and comm
   - Docker Daemon is a server which interacts with the operating system and performs all kind of services.
   - It is suitable when a user wants to directly connect the container to the physical network rather than the Docker host.
 
-Creating and isolated env to allow certain containers to communicate.
-Creating a custom network. (user defined)
+## Create Network
+  - Creating and isolated env to allow certain containers to communicate.
+  - Creating a custom network. (user defined)
 ```
 docker network create <network-name>
 ```
+
 ##Create docker Container in network and assign static IP:
 `` 
 docker run -itd --name c2 --network mynet --ip 10.5.0.4 -P nginx
 ```
+
 ## Assign IP to host for internal use
 - Include the localhost IP address (127.0.0.1) with the publish flag, 
 - Only the Docker host can access the published container port.
