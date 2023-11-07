@@ -18,5 +18,5 @@ Docker is a popular platform for developing, shipping, and running applications 
 
 6. **Orchestration (Optional)**: In real-world applications, you often need to manage multiple containers working together, handle load balancing, scaling, and failover. Tools like Docker Compose, Kubernetes, and Docker Swarm help orchestrate and manage these complex container deployments.
 
-**Conclusion** 
+**Conclusion:** 
 Docker simplifies the process of packaging, distributing, and running applications in a consistent and isolated manner. It's a valuable tool for developers, system administrators, and DevOps teams, as it allows for greater flexibility, scalability, and consistency in deploying applications across different environments. 
