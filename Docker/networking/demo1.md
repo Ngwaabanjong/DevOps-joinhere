@@ -23,7 +23,7 @@ The communication between the containers work
 ```bash
 docker run -itd --name c3 --network net2  busybox
 ```
-**Attach to c3 and ping c1
+**Attach to c3 and ping c1**
 ```bash
 docker attach c3
 ping c1
