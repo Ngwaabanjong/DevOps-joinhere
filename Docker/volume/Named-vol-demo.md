@@ -7,7 +7,7 @@ Create a volume and preserve the data of /tmp directory into the voume
 ```
 Create Volume
 ```
-docker create volume vol1
+docker volume create vol1
 docker volume ls
 docker volume inspect myvol1
 #/var/lib/docker/volumes/myvol/_data
