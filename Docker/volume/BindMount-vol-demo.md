@@ -18,7 +18,7 @@ pwd
 
 **RUN APACHE CONTAINER**
 ```
-docker run -d --name web -P -v /root/apps/html-car-web:/usr/local/apache2/htdocs/ httpd
+docker run -d --name web -P -v /home/ec2-user/apps/html-car-web:/usr/local/apache2/htdocs/ httpd
 ```
 
 **Get Port Number and Browse it**
