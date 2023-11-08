@@ -44,3 +44,9 @@ ls
 exit
 ```
 **Now we see the files are there**
+
+**SOME COMMANS:**
+```
+docker volume ls
+docker volume rm <vol-name>
+```
