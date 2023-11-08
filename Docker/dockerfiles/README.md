@@ -3,7 +3,7 @@
 1. **FROM** 
     - this keyword specifies the base image from which to create the custom image. 
 	- defines the image you want to use.
-	- Define the path of the image if it's on ECR, GitHub or Docker Hub.
+	- Define the path of the image if it's on ECR, Docker Hub.
     ``````
 	FROM ngwaabanjong/image-name      # this is my docker hub registry name/image 
     ``````
