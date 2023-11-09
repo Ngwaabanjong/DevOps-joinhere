@@ -46,7 +46,7 @@
   ```
   **Update container version:**
   ``````
-  docker service update --image ngwaabanjong/samplepyapp:v1 (service-name)
+  docker service update --image ngwaabanjong/samplepyapp:v2 (service-name)
   ``````
 	
   **Roll back to its previous version:** 
