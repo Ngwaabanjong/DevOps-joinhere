@@ -31,7 +31,9 @@
 	- EKS, GKE, AKS
 
 ## Token Syntax:
+```
 Token - docker swarm join --token SWMTKN-1-3p5nc32p4rpks4c6zcom1qy0gfpnqbdxuak4iesww08rs9nnjo-adnzuj2uiqnlwxphkgesf9q73 10.14.1.54:2377
+```
 
 ## Some Commands:
 $ docker swarm init                  = will initialize swarm and give you a token that expires in 30 months by default. 
