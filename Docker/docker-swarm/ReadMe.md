@@ -6,29 +6,29 @@
   - Port binding is down at the cluster level(-p8989) will then forward to the container port (3000). 
 
 ## Load Balancing and DNS:
-	- Port binding is down at the cluster level(-p8989) will then forward to the container port (3000). 
-	- While true; do curl https://<endpoint>; sleep 1; echo " "; done
+  - Port binding is down at the cluster level(-p8989) will then forward to the container port (3000). 
+  - While true; do curl https://<endpoint>; sleep 1; echo " "; done
 ## Using Global:
-        - It enable you to run only one replica on worker nodes.
-	- This is mostly used on antivirus scenarios 
-        - This will create only 1 replica on each node. 
-	- You cannot scale a global cluster. 
+ - It enable you to run only one replica on worker nodes.
+ - This is mostly used on antivirus scenarios
+ - This will create only 1 replica on each node.
+- You cannot scale a global cluster. 
     ``````
 	docker service create --name <service-name> --mode=global -p 8787:80 nginx 
     ``````
 
 ## Features:
-	- Auto deploy
-	- Distribute across host 
-	- Auto Scale - Up and Down
-	- Auto delete 
+  - Auto deploy
+  - Distribute across host 
+  - Auto Scale - Up and Down
+  - Auto delete 
 
 ## Orchestration tools:
-	- Docker swarm
-	- Kubernetes 
-	- Openshift 
-	- Mesios, Linode, rancher 
-	- EKS, GKE, AKS
+  - Docker swarm
+  - Kubernetes 
+  - Openshift 
+  - Mesios, Linode, rancher 
+  - EKS, GKE, AKS
 
 ## Token Syntax:
 ```
