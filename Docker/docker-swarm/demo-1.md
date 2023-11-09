@@ -36,14 +36,14 @@
 
 ## Deploying a cluster with image in Hub
 	
-   ``````
+   ```
    docker service create --name (service-name) --replicas 4 -p 8989:3000 ngwaabanjong/samplepyapp:v1 	
    ```
 
   **Do this on host instance to to test endpoint:**
   ```
   while true; do curl https://(endpoint); sleep 1; echo " "; done	
-  ``
+  ```
   **Update container version:**
   ``````
   docker service update --image ngwaabanjong/samplepyapp:v1 (service-name)
