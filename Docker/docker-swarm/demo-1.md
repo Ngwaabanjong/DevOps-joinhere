@@ -1,34 +1,34 @@
 # Docker Swarm Demo
 ## Steps - Configure Docker Swarm
- **Check if swarm is active**
+## Check if swarm is active:
     ``````
     docker info 	
     ``````
     
-**Initiate Docker Swarm:**
+## Initiate Docker Swarm:
     ``````
     docker swarm init	
     ``````
     
- **Generate token and connect from worker node:**
+ ## Generate token and connect from worker node:
     ``````
     docker swarm joint --token (paste token)	#Paste token in worker node to join the cluster
     docker node ls	                            #To list node - only on leader node
     docker swarm join-token worker	            #this will regenerate the token, in case you lost it.
     ``````
     
- **Create a service with 4 replicas from nginx image on port 8181:**
+ ## Create a service with 4 replicas from nginx image on port 8181:
     ``````
     docker service create --name (service-name) --replicas 4 -p 8181:80 nginx	
     ``````
     
- **Scale Cluster:**
+ ## Scale Cluster:
     ``````
     docker service ps (service-name)	        #To see the state of the cluster 
     docker service scale (service-name)=6 	#This will scale the cluster to make sure it has 6 replicas 
     ``````
     
-   **Delete Cluster:**
+ ## Delete Cluster:
     ``````
     docker service rm (service-name)
     ``````	
