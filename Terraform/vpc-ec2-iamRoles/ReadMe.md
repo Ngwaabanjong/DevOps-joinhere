@@ -1,4 +1,5 @@
 STEP BY STEP VPC & EC2 CREATION WITH TERRAFORM
+https://ngwaabanjong.com/how-to-deploy-vpc-ec2-with-terraform/
 
 # 1 Configure Provider - 0-provider.tf
 Create a folder for your project & create a file called 0-provider.tf 
