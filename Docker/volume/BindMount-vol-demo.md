@@ -12,13 +12,13 @@ git clone https://github.com/Ngwaabanjong/apps.git
 
 Go to the Folder and copy the path
 ```
-cd apps
+cd apps/html-car-web
 pwd
 ```
 
 **RUN APACHE CONTAINER**
 ```
-docker run -d --name web -P -v /root/apps:/usr/local/apache2/htdocs/ httpd
+docker run -d --name web -P -v /home/ec2-user/apps/html-car-web:/usr/local/apache2/htdocs/ httpd
 ```
 
 **Get Port Number and Browse it**
