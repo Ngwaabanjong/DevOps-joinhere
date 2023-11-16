@@ -33,9 +33,9 @@ In a Kubernetes cluster, the machines are referred to as nodes. Nodes can be eit
 
 **In summary,** Control Plane Nodes manage the cluster, while Worker Nodes execute and host the containers that make up the application workloads.
 
-# What to consider when creating an eks cluster
+## What to consider when creating an eks cluster
 
-# Some Commands
+## Some Commands
 - $ eksctl create cluster --name your-cluster-name --region your-region
 - $ kubectl get clusters
 - $ kubectl version
