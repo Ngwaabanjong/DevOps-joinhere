@@ -1,4 +1,5 @@
 # What is Jenkins?
+<<<<<<< HEAD
 - Jenkins is an automation server that helps automate the building, testing, and deployment of software projects. 
 - It simplifies the process of integrating code changes from multiple contributors and ensures that the software is always in a reliable and deployable state.
 
@@ -55,3 +56,6 @@ Integration:
 Scalability:
 
 - Scales easily to accommodate the growing needs of the development and deployment processes.
+=======
+
+>>>>>>> refs/remotes/origin/main
