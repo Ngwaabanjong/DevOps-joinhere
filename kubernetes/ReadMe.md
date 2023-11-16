@@ -18,3 +18,5 @@
 
 Kubernetes simplifies the process of deploying and managing containerized applications, providing tools to handle scaling, load balancing, and rolling updates with ease. It abstracts away many complexities associated with distributed systems, making it easier to develop and operate applications in a containerized environment.
 
+
+
