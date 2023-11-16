@@ -18,6 +18,9 @@ Worker Node:
 ## VPC recommendation
 - https://docs.aws.amazon.com/eks/latest/userguide/creating-a-vpc.html
 
+## Kubectl versions
+-   https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+
 ## How Nodes works
 In a Kubernetes cluster, the machines are referred to as nodes. Nodes can be either physical or virtual. There are two main types of nodes:
 
@@ -33,7 +36,15 @@ In a Kubernetes cluster, the machines are referred to as nodes. Nodes can be eit
 
 **In summary,** Control Plane Nodes manage the cluster, while Worker Nodes execute and host the containers that make up the application workloads.
 
-## What to consider when creating an eks cluster
+## Staeps in creating an eks cluster
+1. Create a VPC to Kubernetes tags.
+2. Create IAM Role for Master Control Node.
+3. Create IAM Role for Worker Nodes.
+4. Create EKS Cluster with Worker Nodes Group.
+5. SSH into Worker Nodes and install kubectl version as per Cluster version.
+6. Login to Cluster through AWS CLI. 
+7. Deploy manifest files for application.
+8. Create a Service (Load Balancer) with manifest file.
 
 ## Some Commands
 - $ eksctl create cluster --name your-cluster-name --region your-region
@@ -44,3 +55,6 @@ GET:
 - $ kubectl get nodes -o wide
 - $ kubectl get pods -A -o wide
 - $ kubectl get svc
+
+## AWS EKS Use cases and Workshops
+- https://aws.amazon.com/eks/?p=pm&pd=eks&z=4
