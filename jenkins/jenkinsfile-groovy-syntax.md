@@ -12,7 +12,7 @@
 - **post:** Defines post-build actions based on the outcome of the pipeline. In this example, we have defined actions for both success and failure scenarios.
 
 ## Code
-```
+```groovy
 pipeline {
     agent any
 
@@ -62,7 +62,7 @@ pipeline {
 ```
 
 ## CODE SYNTAX FOR WORKER NODE:
-```
+```groovy 
 pipeline {
     agent {
         // Specify the name of the worker node or a label

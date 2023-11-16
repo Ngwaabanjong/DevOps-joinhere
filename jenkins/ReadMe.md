@@ -2,6 +2,17 @@
 - Jenkins is an automation server that helps automate the building, testing, and deployment of software projects. 
 - It simplifies the process of integrating code changes from multiple contributors and ensures that the software is always in a reliable and deployable state.
 
+## Types of deployment
+When to use Declarative pipeline:
+- You prefer a more structured and readable syntax.
+- Your CI/CD workflow aligns well with the predefined stages and constructs.
+- Your pipeline requirements are relatively simple and standard.
+
+Scripted pipeline:
+- You need more flexibility and control over the pipeline logic.
+- Your CI/CD workflow involves complex or custom scenarios.
+- You are comfortable with Groovy scripting and want to leverage its full capabilities.
+
 ## Key Concepts:
 **Continuous Integration (CI):**
 
@@ -23,36 +34,27 @@
 
 ## How Jenkins Works:
 **Code Commit:**
-- Developers commit their code changes to a version control system (e.g., Git).
-Triggering Builds:
-
+- Developers commit their code changes to a version control system (Git).
+## Triggering Builds:
 - Jenkins can be configured to monitor the version control system, and when changes are detected, it triggers a build.
-Building:
-
+## Building:
 - Jenkins pulls the latest code, compiles it, and creates a build artifact (e.g., executable, package).
-Testing:
-
+## Testing:
 - Jenkins runs automated tests to ensure that the code changes haven't introduced any errors.
-Deployment:
-
+## Deployment:
 - If the tests pass, Jenkins can automate the deployment of the application to a staging or production environment.
 
 ## Monitoring:
 - Jenkins can be configured to monitor applications, collect metrics, and trigger alerts based on predefined conditions.
 Benefits of Jenkins:
-Automation:
-
+## Automation:
 - Jenkins automates repetitive tasks, reducing the likelihood of human error and saving time.
-Consistency:
-
+## Consistency:
 - Ensures a consistent and repeatable process for building, testing, and deploying code.
-Visibility:
-
+## Visibility:
 - Provides visibility into the entire development and deployment process through centralized logs and dashboards.
-Integration:
-
+## Integration:
 - Integrates with a wide range of tools and technologies, making it a central hub for the DevOps toolchain.
-Scalability:
-
+## Scalability:
 - Scales easily to accommodate the growing needs of the development and deployment processes.
 =======
