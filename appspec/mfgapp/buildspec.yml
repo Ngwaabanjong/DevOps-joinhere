@@ -1,0 +1,33 @@
+# Set environment variables on CodeBuild if you are using AWS_ACCOUNT_ID or simply paste your account number.
+# On Codebuild environment variables:
+# Name: AWS_ACCOUNT_ID, Value: <paste account ID>, Type: Plaintext
+version: 0.2
+env:
+  variables:
+    ECR_REPO_NAME: mfgapp
+phases:
+  pre_build:
+    commands:
+      # ecr login
+      - echo Logging in to ecr...
+      - ECR_MAIN_URI="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
+      - aws ecr get-login-password --region ${AWS_REGION} | docker login -u AWS --password-stdin ${ECR_MAIN_URI}
+
+      - ECR_IMAGE_URI="${ECR_MAIN_URI}/${ECR_REPO_NAME}:latest"
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t mfgapp:latest .
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - docker tag mfgapp:latest ${ECR_IMAGE_URI}
+      - docker push ${ECR_IMAGE_URI}
+
+#       # generate image definitions file for ECS
+#       - printf '[{"name":"mfgapp", "imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
+
+# artifacts:
+#   files:
+#     - imagedefinitions.json

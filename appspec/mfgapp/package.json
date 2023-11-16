@@ -1,0 +1,14 @@
+
+{
+  "name": "docker-complete",
+  "version": "1.0.0",
+  "description": "learning purpose",
+  "main": "server.js",
+  "author": "Ignatius Ngwaabanjong / MFG Community",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "1.19.0"
+  }
+}
+
