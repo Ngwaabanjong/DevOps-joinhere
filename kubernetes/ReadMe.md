@@ -1,4 +1,4 @@
-# What is Kubernetes
+# What is Kubernetes?
 - Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. 
 - It allows you to easily manage and run containers (packaged applications with all their dependencies) in a distributed environment.
 
