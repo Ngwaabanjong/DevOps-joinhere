@@ -46,7 +46,8 @@
 
 ## Monitoring:
 - Jenkins can be configured to monitor applications, collect metrics, and trigger alerts based on predefined conditions.
-Benefits of Jenkins:
+
+# Benefits of Jenkins:
 ## Automation:
 - Jenkins automates repetitive tasks, reducing the likelihood of human error and saving time.
 ## Consistency:
@@ -57,4 +58,4 @@ Benefits of Jenkins:
 - Integrates with a wide range of tools and technologies, making it a central hub for the DevOps toolchain.
 ## Scalability:
 - Scales easily to accommodate the growing needs of the development and deployment processes.
-=======
+
