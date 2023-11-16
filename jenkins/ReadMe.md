@@ -3,12 +3,12 @@
 - It simplifies the process of integrating code changes from multiple contributors and ensures that the software is always in a reliable and deployable state.
 
 ## Types of deployment
-When to use Declarative pipeline:
+**When to use Declarative pipeline:**
 - You prefer a more structured and readable syntax.
 - Your CI/CD workflow aligns well with the predefined stages and constructs.
 - Your pipeline requirements are relatively simple and standard.
 
-Scripted pipeline:
+**Scripted pipeline:**
 - You need more flexibility and control over the pipeline logic.
 - Your CI/CD workflow involves complex or custom scenarios.
 - You are comfortable with Groovy scripting and want to leverage its full capabilities.
