@@ -51,6 +51,10 @@ In the context of Kubernetes, a manifest file is a YAML or JSON file that descri
    - Example: `kubectl get pods`
 
 7. **Editing Manifest:**
-   - Manifests are often version-controlled. Edit the manifest file, then reapply using `kubectl apply`.
+   - Manifests are often version-controlled. 
+   - Edit the manifest file, then reapply using `kubectl apply`.
 
 Manifest files allow you to define and manage your application's structure and behavior in a version-controlled and declarative manner. Kubernetes then works to ensure the actual state matches the desired state specified in the manifest.
+
+## EKS Manifest Samples
+- https://eksctl.io/usage/eks-managed-nodes/
