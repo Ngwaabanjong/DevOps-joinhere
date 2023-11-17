@@ -30,7 +30,7 @@ In the context of Kubernetes, a manifest file is a YAML or JSON file that descri
 
    - Service
    ```yaml
-     apiVersion: v1
+   apiVersion: v1
    kind: Service
    metadata:
      name: my-pod-svc # this name of our service

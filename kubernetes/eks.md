@@ -47,7 +47,9 @@ In a Kubernetes cluster, the machines are referred to as nodes. Nodes can be eit
 8. Create a Service (Load Balancer) with manifest file.
 
 ## Some Commands
+- https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
 - $ eksctl create cluster --name your-cluster-name --region your-region
+- $ eksctl create cluster --name my-cluster --region region-code --version 1.27 --vpc-private-subnets subnet-ExampleID1,subnet-ExampleID2 --without-nodegroup
 - $ kubectl get clusters
 - $ kubectl version
 
