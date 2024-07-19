@@ -11,11 +11,11 @@
 2. Bind Mounts
 
 ### Named Volume
-Allow you to create a named volume and mount it to a container so that the data stored in the volume is preserved even if the container is stopped or removed.
+Allow you to create a named volume (exp: myvol) and mount it to a container so that the data stored in the volume is preserved even if the container is stopped or removed. 
+- (/var/lib/docker/volumes/myvol/_data)
 
 ### Bind Mount
 - In this type, data is not preserved in the (/var/lib/docker/volumes) area.
-- Instead, the container data will be preserved in any other directory no the host machine.
-- No name is given to the volume in this case
-- Any host directory that you want can be mapped to containers directory
+- Instead, the container data will be preserved in any other external directory not the host machine.
+- Any host directory that you want can be mount to container's directory.
 
