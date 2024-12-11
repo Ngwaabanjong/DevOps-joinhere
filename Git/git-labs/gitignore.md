@@ -1,5 +1,5 @@
 # What is Git Ignore?
-- A gitignore file specifies intentionally untracked files or directories that Git should ignore.
+- A .gitignore file specifies intentionally untracked files or directories that Git should ignore.
 
 ---
 

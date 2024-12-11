@@ -55,9 +55,9 @@ git push
 - List branches
 - Now push the branch to remote.
 ```
-git branch -b dev_b
+git checkout -b dev_b
 git branch -a
-git push remote main:dev_b
+git push origin main:dev_b
 ```
 
 ## 3 - GIT MERGE - BRANCH

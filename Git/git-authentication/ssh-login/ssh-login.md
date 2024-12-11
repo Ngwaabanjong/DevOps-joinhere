@@ -17,11 +17,11 @@ git config --list
 
 ## Step 3: Generate an SSH Key Pair:
 - To securely authenticate with your GitHub account without entering your credentials every time, you’ll need to generate an SSH key pair. 
-- Press enter 2X to store the keys on the default location.
 - Run the following command in the terminal:
 ```
 ssh-keygen -t rsa -b 4096 -C "<your-email@example.com>"
 ```
+- Press enter each time X3 to store the keys on the default location.
 
 ## Step 4: Add SSH Key to the SSH Agent:
 - The SSH agent manages your keys.
@@ -40,13 +40,14 @@ cat ~/.ssh/id_rsa.pub
 
 ## Step 6: Add SSH Key to GitHub Account:
 - Open your web browser and login to github.com.
-- On Settings => “SSH and GPG keys => New SSH key
+- On Your Profile (top right) => Settings => “SSH and GPG keys => New SSH key.
 - Give your SSH Keys a title (osname-ssh-key) => paste the copied public key below in the key field. 
 - Click: add key to save on GitHub account.
-- Copy the copy for your reference.
-- Now, test the connection and wait for the success message.
+- Copy the key ID for your reference (Optional).
+- Now, let's test the connection and wait for the success message.
 - Run the following command on your CLI:
 ```
 ssh -T git@github.com
 ```
 
+## Step 7: Clone Repository with SSH URL
