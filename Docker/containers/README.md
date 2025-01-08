@@ -17,7 +17,7 @@ docker run -d nginx
 To create a Docker container from an image, use the docker run command followed by the image name. For example: docker run image_name. This command starts a new container based on the specified image.
 ```
 docker run -it nginx
-docker run -itd --name <container-name> -P <image-name>
+docker run -it --name <container-name> -p 80:80 <image-name>
 ```
 ### How do you list all the running containers?
 To list all the running containers, you can use the docker ps command. This command displays a list of running containers along with their details such as names, IDs, and status.
