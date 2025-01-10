@@ -43,3 +43,9 @@ $ docker swarm joint --token <token> = this is used in the worker node for it to
 $ docker service ps <service-name>   = to see state of cluster
 ```
 
+## troubleshoot worker not connecting:
+```
+sudo usermod -aG docker $USER
+chmod 777 /var/run/docker.sock
+```
+
