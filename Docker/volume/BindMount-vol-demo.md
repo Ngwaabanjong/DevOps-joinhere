@@ -5,7 +5,7 @@ The run options for bind mounts is same as names volume:
 ```
 docker run -d –name cont1 -v /anyhostdir/Path:/anycontdir/Path Imagename
 ```
-Example:
+Steps:
 ```
 git clone https://github.com/Ngwaabanjong/apps.git
 ```
