@@ -4,6 +4,7 @@
 docker run -itd --name wp -P wordpress
 ```
 - Access it form browser using the host port.
+- make sure you set your SG firewall to all trafic.
 - Ipaddress:portnumber - http://35.170.70.1:32769
 ## Deploy a DB container
 ```
